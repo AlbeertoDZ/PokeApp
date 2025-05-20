@@ -5,6 +5,14 @@
   text-align: center;
 }
 
+body {
+  min-height: 100vh;
+  margin: 0;
+  background: linear-gradient(120deg, var(--khaki) 60%, var(--peach) 100%);
+  /* background: var(--english-violet);; */
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
