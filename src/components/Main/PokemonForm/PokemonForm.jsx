@@ -4,7 +4,7 @@ const PokemonForm = () => {
   
   const [values, setValues] = useState({
     name: "",
-    type: "",
+    types: "",
     ability: "",
     image: "",
   })
@@ -13,7 +13,7 @@ const PokemonForm = () => {
     e.preventDefault();
     setValues({
       name: "",
-      type: "",
+      types: "",
       ability: "",
       image: "",
     });
@@ -31,22 +31,22 @@ const PokemonForm = () => {
     <h2>Nuevo Pokemon</h2>
     <form onSubmit={handleSubmit}>
       <div>
-      <label htmlFor="name">Nombre</label>
+      <label htmlFor="name">Nombre: </label>
       <input type="text" name="name" id="name" value={values.name} onChange={handleChange} />
       </div>
       <div>
-      <label htmlFor="type">Tipo</label>
-      <input type="text" name="type" id="type" value={values.type} onChange={handleChange} />
+      <label htmlFor="type">Tipos: </label>
+      <input type="text" name="type" id="type" value={values.types} onChange={handleChange} />
       </div>
       <div>
-      <label htmlFor="ability">Habilidad</label>
+      <label htmlFor="ability">Habilidades: </label>
       <input type="text" name="ability" id="ability" value={values.ability} onChange={handleChange} />
       </div>
       <div>
-      <label htmlFor="image">Imagen</label>
+      <label htmlFor="image">Imagen: </label>
       <input type="text" name="image" id="image" value={values.image} onChange={handleChange} />
       </div>
-      <button type="submit">Crear Pokemon</button>
+      <button type="submit">Crear Pokemon: </button>
     </form>
     </div>;
 };
